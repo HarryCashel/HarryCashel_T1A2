@@ -1,0 +1,6 @@
+.navbar li {
+  list-style-type: none;
+  margin: 2vw 0;
+
+  font-size: 3vh;
+}
