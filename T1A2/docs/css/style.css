@@ -1,3 +1,84 @@
-div {
-  border: 2px solid black;
+/* remove browser defaults and set default font + size for page */
+
+
+/* set some color variables and font-family default */
+:root {
+  font-family: 'Scope One', serif;
+  --text-primary: #BB86FC;
+  --text-secondary: #03DAC6;
+  --bg-primary: #141d26;
+  --bg-secondary: #121212;
+}
+body {
+  /* margin: 0 auto !important;
+  padding: 0 auto !important; */
+  font-family: 'Scope One', serif;
+  font-size: 1rem;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+}
+/* navbar style */
+ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  background-color: var(--text-secondary);
+
+}
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  color: orange;
+}
+
+
+/* main content */
+
+div.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+div.intro p {
+  text-align: center;
+  max-width: 768px;
+}
+
+h1 {
+  letter-spacing: .5rem;
+}
+h3 a {
+  color: var(--text-secondary);
+}
+
+div.pages-intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Intro background image */
+img {
+  width: 100%;
+  max-width: 768px;
+}
+
+
+/* generic settings for each page intro */
+div.blog-intro,
+div.projects-intro,
+div.about-intro,
+div.contact-intro {
+  border: 2px solid var(--text-secondary);
+  border-radius: 40px;
+  margin: 10px 40px;
+  text-align: center;
+  max-width: 768px;
+}
+h3 a:hover {
+  color: orange;
 }
