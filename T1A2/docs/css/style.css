@@ -5,7 +5,9 @@
 :root {
   font-family: 'Scope One', serif;
   --text-primary: #BB86FC;
+  --text-variant: #3700b3;
   --text-secondary: #03DAC6;
+  --text-secondary-variant: #FFA500;
   --bg-primary: #141d26;
   --bg-secondary: #121212;
 }
@@ -29,11 +31,13 @@ li {
   list-style-type: none;
 }
 a {
+  padding: 4px;
   text-decoration: none;
 }
 a:hover {
-  color: orange;
+  color: var(--text-secondary-variant);
 }
+
 
 
 /* main content */
@@ -61,7 +65,7 @@ div.pages-intro {
   align-items: center;
 }
 
-/* Intro background image */
+/* flex image - stop growth */
 img {
   width: 100%;
   max-width: 768px;
@@ -69,6 +73,7 @@ img {
 
 
 /* generic settings for each page intro */
+div.post,
 div.blog-intro,
 div.projects-intro,
 div.about-intro,
@@ -78,7 +83,70 @@ div.contact-intro {
   margin: 10px 40px;
   text-align: center;
   max-width: 768px;
+  padding: 4px;
 }
 h3 a:hover {
   color: orange;
+}
+
+        /* BLOG CSS */
+div.blog-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+
+div.post {
+  max-width: 320px;
+  padding: 1em;
+}
+
+        /* media query  */
+
+@media screen and (min-width:768px) {
+  body {
+    font-size: 1.3rem;
+  }
+  div.blog-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  div.post {
+    margin: 2rem 1rem;
+  }
+  div.post img {
+    max-height: 175px;
+
+  }
+
+}
+@media screen and (min-width: 1024px) {
+
+  div.pages-intro,
+  div.blog-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 1.3rem;
+  }
+  div.projects-intro, div.contact-intro, div.post {
+    margin-top: 50px;
+  }
+  div.post,
+  div.blog-intro,
+  div.projects-intro,
+  div.about-intro,
+  div.contact-intro {
+    padding: 1.3rem;
+  }
+
+  div.post img {
+    max-height: 258px;
+
+  }
 }
