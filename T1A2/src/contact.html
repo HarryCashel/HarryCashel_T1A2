@@ -18,7 +18,7 @@
       <li><a href="contact.html">Contact</a></li>
     </ul>
   </nav>
-
+<!-- main content container and heading -->
   <main>
     <div class="intro-cont">
       <div class="intro">
@@ -28,6 +28,59 @@
           eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
       </div>
     </div>
+
+<!-- set container for form -->
+    <div class="contact-form-body">
+      <div class="contact-form-div">
+      <h3>Contact Me</h3>
+      <!-- elements for each label and input -->
+      <form class="contact-form-class" action="index.php" method="post">
+
+        <div class="form-label">
+          <label for="Name" class="label">Your name</label>
+          <div class="form-input">
+            <input type="text" id="Name" name="Name" value="" class="form-req" required>
+          </div>
+        </div>
+        <div class="form-label">
+          <label for="Name" class="label">Last</label>
+          <div class="form-input">
+            <input type="text" id="Name" name="Last name" value="" class="form-req" required>
+          </div>
+        </div>
+        <div class="form-label">
+          <label for="Email" class="label">Your email address</label>
+          <div class="form-input">
+            <input type="email" id="Email" name="Email" value="" class="form-req" required>
+          </div>
+        </div>
+        <div class="form-label">
+          <label for="Phone" class="label">Your phone number</label>
+          <div class="form-input">
+            <input type="text" id="Phone" name="Phone" value="" class="form-req" required>
+          </div>
+        </div>
+        <div class="form-label">
+          <label for="Message" class="label">Your message</label>
+          <div class="form-input">
+            <textarea id="Message" name="Message" rows="8" maxlength="420" required></textarea>
+          </div>
+        </div>
+        <div class="form-label">
+          <button type="submit" id="form-button" class="form-button" name="button"></button>
+
+        </div>
+
+
+
+
+      </form>
+      </div>
+
+
+    </div>
+
+
 
   </body>
 </html>
