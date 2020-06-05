@@ -53,6 +53,9 @@ div.intro p {
 h1 {
   letter-spacing: .5rem;
 }
+h3 {
+  color: var(--text-secondary);
+}
 h3 a {
   color: var(--text-secondary);
 }
@@ -63,7 +66,7 @@ div.pages-intro {
   align-items: center;
 }
 
-/* flex image - stop growth */
+/* flex image - stop growth of images */
 img {
   width: 100%;
   max-width: 768px;
@@ -152,12 +155,13 @@ max-width: 250px;
 
 }
 
-/* Experience CSS */
+    /* Experience CSS */
 div.experience-container {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+    /* set max-width for columns and flex container */
 div.ex-left-column,
 div.ex-middle-column,
 div.ex-right-column {
@@ -166,7 +170,7 @@ div.ex-right-column {
   width:100%;
   max-width: 768px;
 }
-
+    /* element alignment/growth/border */
 div.python-post,
 div.uni-post,
 div.security-post,
@@ -233,7 +237,7 @@ div.cv-img {
     height: 0;
     padding-top: 66%;
   }
-    /* experience page media query */
+    /* experience/about page media query */
   @media screen and (min-width:768px) {
 
     div.ex-left-column,
@@ -250,10 +254,84 @@ div.cv-img {
     div.css-post,
     div.security-post,
     div.uni-post,
-    div.python-post {
+    div.python-post,
+    div.gym-post,
+    div.esports-post,
+    div.riding-post,
+    div.bjj-post,
+    div.self-post {
       flex: 1;
     }
     }
+
+    /* About css */
+
+    /* element alignment/growth/border */
+div.gym-post,
+div.esports-post,
+div.riding-post,
+div.bjj-post,
+div.self-post {
+  border: 2px solid var(--text-secondary);
+  border-radius: 40px;
+  margin: 10px 40px;
+  text-align: center;
+  max-width: 768px;
+  padding: 1em;
+}
+
+      /* background images for each post div */
+div.gym-img {
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.3)
+    ), url("../rock.jpg");
+    background-size: cover;
+    width: 100;
+    height: 0;
+    padding-top: 66%;
+}
+  div.esports-img {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.3),
+        rgba(0, 0, 0, 0.3)
+      ), url("../skt.jpg");
+      background-size: cover;
+      width: 100;
+      height: 0;
+      padding-top: 66%;
+}
+  div.riding-img {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.3),
+        rgba(0, 0, 0, 0.3)
+      ), url("../ninja.jpg");
+      background-size: cover;
+      width: 100;
+      height: 0;
+      padding-top: 66%;
+}
+div.bjj-img {
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.3)
+    ), url("../dj.jpg");
+    background-size: cover;
+    width: 100;
+    height: 0;
+    padding-top: 66%;
+}
+div.self-img {
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.3)
+    ), url("../iroh.jpg");
+    background-size: contain;
+    width: 100;
+    height: 0;
+    padding-top: 66%;
+}
+
 
 
     /* Contact css */
@@ -311,3 +389,6 @@ div.cv-img {
   padding: 4px;
   text-decoration: none;
  }
+ul.social-icons {
+  margin-bottom: 0;
+}
