@@ -11,10 +11,10 @@ I created this website to showcase the skills I have learnt so far in CCC and ma
 It's a simple design that is consistent throughout the website. I will continue to update it as I learn new skills and will personalise the information.
 
 ### Links
-[My Presentation.](../ppt/)  
-[My Wireframes](../ppt/)  
-[Screenshots](../ppt/)
-
+[My Presentation.](/docs/)  
+[My Wireframes](/docs/wireframes.pdf)  
+[Sitemap](/docs/sitemap.pdf)
+<a href="src/index.html" target="____blank">Home</a>
 
 ### Built With
 HTML & CSS.
