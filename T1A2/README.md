@@ -27,7 +27,7 @@ Using these simple features I achieved a smooth and simple layout I'm proud of.
 [Presentation Notes](https://github.com/HarryCashel/Portfolio/blob/master/T1A2/docs/presentationnotes.pdf)  
 [My Wireframes](https://github.com/HarryCashel/Portfolio/blob/master/T1A2/docs/wireframes.pdf)  
 [Sitemap](https://github.com/HarryCashel/Portfolio/blob/master/T1A2/docs/sitemap.pdf)  
-[Screenshots](https://github.com/HarryCashel/Portfolio/blob/master/T1A2/docs/sitemap.pdf)
+[Screenshots](https://github.com/HarryCashel/Portfolio/blob/master/T1A2/docs/screenshots)
 
 
 
